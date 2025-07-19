@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Smoothing Filter UI</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin: 20px; }
+    canvas { border: 1px solid #000; margin: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>Upload Image & Apply 3x3 Smoothing Filter</h2>
+  <input type="file" id="upload" accept="image/*">
+  <br><br>
+  <button onclick="applySmoothing()">Smooth Image</button>
+  <br><br>
+  <canvas id="originalCanvas" width="300" height="300"></canvas>
+  <canvas id="smoothedCanvas" width="300" height="300"></canvas>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
